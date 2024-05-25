@@ -1,0 +1,326 @@
+<!Doctype HTML>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>gsap練習</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="container">
+    <!--1.TweenMax.to-->
+            <div class="circle"></div>
+            <div class="square"></div>
+    <!--2.Tween.from-->
+            <div id="rectangle"></div>
+    <!--2-2jQueryとの併用-->
+            <ul>
+                <li>Bacon</li>
+                <li>Cheese</li>
+                <li>Jam</li>
+                <li>Bread</li>
+                <li>Eggs</li>
+            </ul>
+        </div>
+
+        
+        <div class="container_space">
+    <!--3.TimelineMax-->
+            <div class="column col1 equal">
+                <p>パネル１(.circle)</p>
+                <div class="circle"></div>
+            </div>
+            <div class="column col2 equal">
+                <p>パネル２(.square)</p>
+                <div class="square"></div>
+            </div>
+            <div class="column col3 equal">
+                <p>パネル３(.rectangle)</p>
+                <div class="rectangle"></div>
+            </div>
+        </div>
+
+
+        <div class="container_space">
+    <!--4.easingの設定-->
+            <div class="column col1 easing1">
+                <p>easing1_パネル１(.circle)</p>
+                <div class="circle"></div>
+            </div>
+            <div class="column col2 easing1">
+                <p>easing1_パネル２(.square)</p>
+                <div class="square"></div>
+            </div>
+            <div class="column col3 easing1">
+                <p>easing1_パネル３(.rectangle)</p>
+                <div class="rectangle easing1"></div>
+            </div>
+        </div>
+
+
+        <div class="container_space">
+                <div class="column col1 easing2">
+                    <p>easing2_パネル1(.circle)</p>
+                    <div class="circle"></div>
+                </div>
+                <div class="column col2 easing2">
+                    <p>easing2_パネル2(.square)</p>
+                    <div class="square"></div>
+                </div>
+                <div class="column col3 easing2">
+                    <p>easing2_パネル3(.rectangle)</p>
+                    <div class="rectangle"></div>
+                </div>
+            </div>
+
+        <div class="container_space">
+            <div class="column col1 easing3">
+                <p>easing3_パネル1(.circle)</p>
+                <div class="circle"></div>
+            </div>
+            <div class="column col2 easing3">
+                <p>easing3_パネル2(.square)</p>
+                <div class="square"></div>
+            </div>
+            <div class="column col3 easing3">
+                <p>easing3_パネル3(.rectangle)</p>
+                <div class="rectangle"></div>
+            </div>
+        </div>
+
+        <div class="container_space">
+            <div class="column col1 easing4">
+                <p>easing4_パネル1(.circle)</p>
+                <div class="circle"></div>
+            </div>
+            <div class="column col2 easing4">
+                <p>easing4_パネル2(.square)</p>
+                <div class="square"></div>
+            </div>
+            <div class="column col3 easing4">
+                <p>easing4_パネル3(.rectangle)</p>
+                <div class="rectangle"></div>
+            </div>
+        </div>
+
+        <div class="container_space">
+            <div class="column col1 easing5">
+                <p>easing5_パネル1(.circle)</p>
+                <div class="circle"></div>
+            </div>
+            <div class="column col2 easing5">
+                <p>easing5_パネル2(.square)</p>
+                <div class="square"></div>
+            </div>
+            <div class="column col3 easing5">
+                <p>easing5_パネル3(.rectangle)</p>
+                <div class="rectangle"></div>
+            </div>
+        </div>
+
+        <div class="container_space">
+            <div class="column col1 easing6">
+                <p>easing6_パネル1(.circle)</p>
+                <div class="circle"></div>
+            </div>
+            <div class="column col2 easing6">
+                <p>easing6_パネル2(.square)</p>
+                <div class="square"></div>
+            </div>
+            <div class="column col3 easing6">
+                <p>easing6_パネル3(.rectangle)</p>
+                <div class="rectangle"></div>
+            </div>
+        </div>
+
+    <!--5.staggerTo/staggerFrom-->
+    <div class="col4">
+        <p>パネル(.triangle)</p>
+        <div class="triangleContainer staggerFrom">
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+        </div>
+    </div>
+
+    <div class="col4">
+        <p>パネル(.triangle)</p>
+        <div class="triangleContainer staggerTo">
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+        </div>
+    </div>
+
+    <!--6.TweenMax.setとTimelineMaxプロパティ-->
+    <div class="col5">
+        <p>パネル5(.oval)</p>
+        <div class="oval"></div>
+    </div>
+
+    <!--7.TimelineMaxのラベルと同期処理-->
+    <div class="container_space">
+        <div class="column col1 synchro_process">
+            <p>同期処理.circleRectangle(.circle)</p>
+            <div class="circle"></div>
+        </div>
+        <div class="column col2 synchro_process">
+            <p>同期処理(.square)</p>
+            <div class="square"></div>
+        </div>
+        <div class="column col3 synchro_process">
+            <p>同期処理.circleRectangle+=1(.rectangle)</p>
+            <div class="rectangle"></div>
+        </div>
+    </div>
+
+    <!--8.TimelineMax制御-->
+    <div class="container_control">
+        <div class="column col1 control">
+            <p>TimelineMaxの制御(.circle)</p>
+            <div class="circle shape"></div>
+        </div>
+        <div class="column col2 control">
+            <p>TimelineMaxの制御(.square)</p>
+            <div class="square shape"></div>
+        </div>
+        <div class="column col3 control">
+            <p>TimelineMaxの制御(.rectangle)</p>
+            <div class="rectangle shape"></div>
+        </div>
+
+
+        <div class="col4">
+            <p>パネル(.triangle)</p>
+            <div class="triangleContainer">
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+                <div class="triangle shape"></div>
+            </div>
+        </div>
+        
+    
+        <div class="col5">
+            <p>パネル5(.oval)</p>
+            <div class="oval shape"></div>
+        </div>
+
+        <div class="col6">
+            <p>TimelineMaxの制御</p>
+            <div class="pacman_container">
+                <div class="pacman shape"></div>
+                <div class="pacman shape"></div>
+                <div class="pacman shape"></div>
+                <div class="pacman shape"></div>
+                <div class="pacman shape"></div>
+                <div class="pacman shape"></div>
+                <div class="pacman shape"></div>
+                <div class="pacman shape"></div>
+                <div class="pacman shape"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="playback_controls">
+        <a href="#0" class="playbackButton playButton">Play</a>
+        <a href="#0" class="playbackButton pauseButton">Pause</a>
+        <a href="#0" class="playbackButton resumeButton">Resume</a>
+        <a href="#0" class="playbackButton reverseButton">Reverse</a>
+        <a href="#0" class="playbackButton slowButton">Slow</a>
+        <a href="#0" class="playbackButton fastButton">Fast</a>
+        <a href="#0" class="playbackButton seekButton">Seek</a>
+        <a href="#0" class="playbackButton progressButton">Progress</a>
+    </div>
+
+
+
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script type="text/javascript" src="animation.js"></script>
+    </body>
